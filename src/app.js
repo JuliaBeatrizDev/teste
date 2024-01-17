@@ -21,6 +21,12 @@ const carros =[
         titulo: "golf gti",
         marca: "volkswagen",
         ano: 2003
+    },
+    {
+        id: 3,
+        titulo: "monza",
+        marca: "chevrolet",
+        ano: 1975
     }
 ]
 
