@@ -6,25 +6,25 @@ app.use(express.json()); //middleware está convertendo pra json as reqisições
 const carros =[
     {
         id: 0,
-        titulo: "monza",
+        nome: "monza",
         marca: "chevrolet",
         ano: 1988
     },
     {
         id: 1,
-        titulo: "chevette",
+        nome: "chevette",
         marca: "chevrolet",
         ano: 1993
     },
     {
         id: 2,
-        titulo: "golf gti",
+        nome: "golf gti",
         marca: "volkswagen",
         ano: 2003
     },
     {
         id: 3,
-        titulo: "monza",
+        nome: "monza",
         marca: "chevrolet",
         ano: 1975
     }
@@ -56,7 +56,7 @@ app.post("/carros", (req, res) => {
 
 app.put("/carros/:id", (req, res) => {
     const index = buscadorCarro(req.params.id)
-    carros[index].titulo =req.body.titulo
+    carros[index].nome =req.body.nome
     res.status(200).send("carro editado")
 
 })
